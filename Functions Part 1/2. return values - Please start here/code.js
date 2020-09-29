@@ -18,3 +18,13 @@ function sum(a, b){
 }
 var x = sum(3, 7);
 console.log(x);
+
+//return a function
+function greet(x){
+	return function(name)
+	{
+		console.log(x+" "+name+" !");
+	}
+}
+greet('chal')('bsdk');
+console.log(greet('chal'));
